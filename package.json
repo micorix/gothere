@@ -1,0 +1,15 @@
+{
+  "name": "gothere",
+  "version": "1.0.0",
+  "description": "Super simple static url shortner",
+  "main": "index.js",
+  "repository": "https://github.com/micorix/gothere",
+  "author": "micorix <contactme@micorix.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "ejs": "^2.6.1",
+    "fs-extra": "^7.0.1"
+  }
+}

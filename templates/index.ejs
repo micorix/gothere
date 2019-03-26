@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= name %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+     var redirects = JSON.parse('<%- redirects  %>')
+     var curr = redirects.find(r => `/${r.path}`.trim() === window.location.pathname.trim())
+     if(curr){
+         window.location.href = curr.url
+     }else{
+        window.location.href = '<%= fallbackUrl  %>'
+     }
+    </script>
+</head>
+<body>
+    <h1>Loading...</h1>
+</body>
+</html>
